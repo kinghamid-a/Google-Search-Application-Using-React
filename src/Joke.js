@@ -5,8 +5,8 @@ function Joke(){
     const [joke, setJoke] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:3005/jokes/random`)
-        // fetch('https://official-joke-api.appsopt.com/jokes/random')
+        // fetch(`http://localhost:3005/jokes/random`)
+        fetch('https://official-joke-api.appsopt.com/jokes/random')
         .then(response => response.json())
         .then(json => {
             console.log('joke json', json)
